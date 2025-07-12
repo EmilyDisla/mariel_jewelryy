@@ -1,7 +1,4 @@
-// main.js
-// Elimina el código de menú hamburguesa antiguo y usa solo Bootstrap para la navbar
 
-// Funcionalidad del Carrito
 class ShoppingCart {
     constructor() {
         this.items = JSON.parse(localStorage.getItem('cart')) || [];
@@ -196,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Mostrar mensaje al enviar correo
+   
     const mailBtn = document.querySelector('a[href^="mailto:"]');
     if (mailBtn) {
         mailBtn.addEventListener('click', function(e) {
@@ -214,4 +211,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Corrige la imagen que no se ve: revisa rutas y nombres en las cards y carrusel
